@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tablaLayout"
+        android:layout_width="406dp"
+        android:layout_height="444dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btMSuma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonmemoria_border"
+                android:onClick="sumarMemoria"
+                android:text="M+"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btMR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonmemoria_border"
+                android:onClick="ponerMemoria"
+                android:text="MR"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btMC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonmemoria_border"
+                android:onClick="memoriaACero"
+                android:text="MC"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btEliminar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonigual_border"
+                android:onClick="borrarUno"
+                android:text="«"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btAC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonigual_border"
+                android:onClick="todoLimpio"
+                android:text="A/C"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="1"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="2"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="3"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btSuma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonoperacion_border"
+                android:onClick="operar"
+                android:text="+"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="4"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="5"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="6"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btRestar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonoperacion_border"
+                android:onClick="operar"
+                android:text="-"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="7"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="8"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="9"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btMultiplicar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonoperacion_border"
+                android:onClick="operar"
+                android:text="x"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btPunto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="."
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bt0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonnumerico_border"
+                android:onClick="pulsaNumero"
+                android:text="0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btIgual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonigual_border"
+                android:onClick="operar"
+                android:text="="
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btDividir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/botonoperacion_border"
+                android:onClick="operar"
+                android:text="/"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/pantallaResul"
+        android:layout_width="286dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="end"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tablaLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="286dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="end"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/pantallaResul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pantallaOp"
+        android:layout_width="39dp"
+        android:layout_height="47dp"
+        android:gravity="end"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tablaLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758" />
+</androidx.constraintlayout.widget.ConstraintLayout>
